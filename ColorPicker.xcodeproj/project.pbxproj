@@ -3,11 +3,10 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		54E670D26B9820A81AD094CB /* Pods_ColorPicker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7C0A0F649E3AD51FE568CB4 /* Pods_ColorPicker.framework */; };
 		C127A1F2235EF3940033AF04 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C127A1F1235EF3940033AF04 /* Default-568h@2x.png */; };
 		C129444A235EC21E001EAA85 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1294449235EC21E001EAA85 /* AppDelegate.swift */; };
 		C129444C235EC21E001EAA85 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C129444B235EC21E001EAA85 /* SceneDelegate.swift */; };
@@ -15,18 +14,49 @@
 		C1294451235EC21E001EAA85 /* ColorPicker.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C129444F235EC21E001EAA85 /* ColorPicker.storyboard */; };
 		C1294453235EC21F001EAA85 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C1294452235EC21F001EAA85 /* Assets.xcassets */; };
 		C1294456235EC21F001EAA85 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1294454235EC21F001EAA85 /* LaunchScreen.storyboard */; };
-		C1294461235EC41C001EAA85 /* ColorPickerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1294460235EC41C001EAA85 /* ColorPickerModel.swift */; };
-		C1294463235EC45F001EAA85 /* Validator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1294462235EC45F001EAA85 /* Validator.swift */; };
+		C1294461235EC41C001EAA85 /* ColorPickerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1294460235EC41C001EAA85 /* ColorPickerViewModel.swift */; };
 		C1294465235EC466001EAA85 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1294464235EC466001EAA85 /* UIColor.swift */; };
-		C1294467235EC46F001EAA85 /* NotificationName.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1294466235EC46F001EAA85 /* NotificationName.swift */; };
 		C1294469235EC475001EAA85 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1294468235EC475001EAA85 /* String.swift */; };
-		C129446B235EC47A001EAA85 /* Float.swift in Sources */ = {isa = PBXBuildFile; fileRef = C129446A235EC47A001EAA85 /* Float.swift */; };
 		C129446D235EC485001EAA85 /* ColorPickerViewController+UITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = C129446C235EC485001EAA85 /* ColorPickerViewController+UITextField.swift */; };
+		C131FC30238E04FB001DD7F9 /* RxRelay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C131FC2B238E04FB001DD7F9 /* RxRelay.framework */; };
+		C131FC31238E04FB001DD7F9 /* RxRelay.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C131FC2B238E04FB001DD7F9 /* RxRelay.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C131FC32238E04FB001DD7F9 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C131FC2C238E04FB001DD7F9 /* RxSwift.framework */; };
+		C131FC33238E04FB001DD7F9 /* RxSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C131FC2C238E04FB001DD7F9 /* RxSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C131FC34238E04FB001DD7F9 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C131FC2D238E04FB001DD7F9 /* RxCocoa.framework */; };
+		C131FC35238E04FB001DD7F9 /* RxCocoa.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C131FC2D238E04FB001DD7F9 /* RxCocoa.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C131FC36238E04FB001DD7F9 /* Alertift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C131FC2E238E04FB001DD7F9 /* Alertift.framework */; };
+		C131FC37238E04FB001DD7F9 /* Alertift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C131FC2E238E04FB001DD7F9 /* Alertift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C131FC38238E04FB001DD7F9 /* RxOptional.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C131FC2F238E04FB001DD7F9 /* RxOptional.framework */; };
+		C131FC39238E04FB001DD7F9 /* RxOptional.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C131FC2F238E04FB001DD7F9 /* RxOptional.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C173B9EA238E1617002828A2 /* RxGesture.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C173B9E9238E1617002828A2 /* RxGesture.framework */; };
+		C173B9EB238E1617002828A2 /* RxGesture.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C173B9E9238E1617002828A2 /* RxGesture.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C173B9EE238E1D15002828A2 /* ColorPickerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C173B9ED238E1D15002828A2 /* ColorPickerModel.swift */; };
+		C173B9F0238E1D4D002828A2 /* RGB.swift in Sources */ = {isa = PBXBuildFile; fileRef = C173B9EF238E1D4D002828A2 /* RGB.swift */; };
+		C173B9F2238E1D57002828A2 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = C173B9F1238E1D57002828A2 /* Alert.swift */; };
+		C173B9F4238E268A002828A2 /* TextColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C173B9F3238E268A002828A2 /* TextColor.swift */; };
+		C173B9F7238E48FC002828A2 /* Validator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C173B9F6238E48FC002828A2 /* Validator.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		C131FC3A238E04FB001DD7F9 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				C131FC39238E04FB001DD7F9 /* RxOptional.framework in Embed Frameworks */,
+				C131FC35238E04FB001DD7F9 /* RxCocoa.framework in Embed Frameworks */,
+				C173B9EB238E1617002828A2 /* RxGesture.framework in Embed Frameworks */,
+				C131FC37238E04FB001DD7F9 /* Alertift.framework in Embed Frameworks */,
+				C131FC33238E04FB001DD7F9 /* RxSwift.framework in Embed Frameworks */,
+				C131FC31238E04FB001DD7F9 /* RxRelay.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		7C1AD801D2E9B06211F0F162 /* Pods-ColorPicker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ColorPicker.debug.xcconfig"; path = "Target Support Files/Pods-ColorPicker/Pods-ColorPicker.debug.xcconfig"; sourceTree = "<group>"; };
-		A68C130A93C919811D27D23F /* Pods-ColorPicker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ColorPicker.release.xcconfig"; path = "Target Support Files/Pods-ColorPicker/Pods-ColorPicker.release.xcconfig"; sourceTree = "<group>"; };
 		C127A1F1235EF3940033AF04 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		C1294446235EC21E001EAA85 /* ColorPicker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ColorPicker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1294449235EC21E001EAA85 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -36,14 +66,21 @@
 		C1294452235EC21F001EAA85 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C1294455235EC21F001EAA85 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C1294457235EC21F001EAA85 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C1294460235EC41C001EAA85 /* ColorPickerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPickerModel.swift; sourceTree = "<group>"; };
-		C1294462235EC45F001EAA85 /* Validator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validator.swift; sourceTree = "<group>"; };
+		C1294460235EC41C001EAA85 /* ColorPickerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPickerViewModel.swift; sourceTree = "<group>"; };
 		C1294464235EC466001EAA85 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
-		C1294466235EC46F001EAA85 /* NotificationName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationName.swift; sourceTree = "<group>"; };
 		C1294468235EC475001EAA85 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
-		C129446A235EC47A001EAA85 /* Float.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Float.swift; sourceTree = "<group>"; };
 		C129446C235EC485001EAA85 /* ColorPickerViewController+UITextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ColorPickerViewController+UITextField.swift"; sourceTree = "<group>"; };
-		F7C0A0F649E3AD51FE568CB4 /* Pods_ColorPicker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ColorPicker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C131FC2B238E04FB001DD7F9 /* RxRelay.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxRelay.framework; path = Carthage/Build/iOS/RxRelay.framework; sourceTree = "<group>"; };
+		C131FC2C238E04FB001DD7F9 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
+		C131FC2D238E04FB001DD7F9 /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
+		C131FC2E238E04FB001DD7F9 /* Alertift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alertift.framework; path = Carthage/Build/iOS/Alertift.framework; sourceTree = "<group>"; };
+		C131FC2F238E04FB001DD7F9 /* RxOptional.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxOptional.framework; path = Carthage/Build/iOS/RxOptional.framework; sourceTree = "<group>"; };
+		C173B9E9238E1617002828A2 /* RxGesture.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxGesture.framework; path = Carthage/Build/iOS/RxGesture.framework; sourceTree = "<group>"; };
+		C173B9ED238E1D15002828A2 /* ColorPickerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPickerModel.swift; sourceTree = "<group>"; };
+		C173B9EF238E1D4D002828A2 /* RGB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RGB.swift; sourceTree = "<group>"; };
+		C173B9F1238E1D57002828A2 /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
+		C173B9F3238E268A002828A2 /* TextColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextColor.swift; sourceTree = "<group>"; };
+		C173B9F6238E48FC002828A2 /* Validator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,26 +88,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				54E670D26B9820A81AD094CB /* Pods_ColorPicker.framework in Frameworks */,
+				C131FC38238E04FB001DD7F9 /* RxOptional.framework in Frameworks */,
+				C131FC34238E04FB001DD7F9 /* RxCocoa.framework in Frameworks */,
+				C173B9EA238E1617002828A2 /* RxGesture.framework in Frameworks */,
+				C131FC36238E04FB001DD7F9 /* Alertift.framework in Frameworks */,
+				C131FC32238E04FB001DD7F9 /* RxSwift.framework in Frameworks */,
+				C131FC30238E04FB001DD7F9 /* RxRelay.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		6B020D8274A0F8CD29F5E0A5 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				F7C0A0F649E3AD51FE568CB4 /* Pods_ColorPicker.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		95C096D2FC2F2AC97F402339 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				7C1AD801D2E9B06211F0F162 /* Pods-ColorPicker.debug.xcconfig */,
-				A68C130A93C919811D27D23F /* Pods-ColorPicker.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -92,7 +124,7 @@
 				C1294448235EC21E001EAA85 /* ColorPicker */,
 				C1294447235EC21E001EAA85 /* Products */,
 				95C096D2FC2F2AC97F402339 /* Pods */,
-				6B020D8274A0F8CD29F5E0A5 /* Frameworks */,
+				C131FC2A238E04FB001DD7F9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -109,6 +141,7 @@
 			children = (
 				C129445D235EC226001EAA85 /* App */,
 				C129445E235EC232001EAA85 /* View */,
+				C173B9EC238E1B33002828A2 /* Entity */,
 				C129445F235EC2B8001EAA85 /* Extension */,
 				C127A1EE235EF3480033AF04 /* Resources */,
 			);
@@ -120,6 +153,7 @@
 			children = (
 				C1294449235EC21E001EAA85 /* AppDelegate.swift */,
 				C129444B235EC21E001EAA85 /* SceneDelegate.swift */,
+				C173B9F6238E48FC002828A2 /* Validator.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -129,7 +163,8 @@
 			children = (
 				C129444F235EC21E001EAA85 /* ColorPicker.storyboard */,
 				C129444D235EC21E001EAA85 /* ColorPickerViewController.swift */,
-				C1294460235EC41C001EAA85 /* ColorPickerModel.swift */,
+				C1294460235EC41C001EAA85 /* ColorPickerViewModel.swift */,
+				C173B9ED238E1D15002828A2 /* ColorPickerModel.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -137,14 +172,34 @@
 		C129445F235EC2B8001EAA85 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
-				C1294462235EC45F001EAA85 /* Validator.swift */,
-				C1294466235EC46F001EAA85 /* NotificationName.swift */,
 				C1294468235EC475001EAA85 /* String.swift */,
-				C129446A235EC47A001EAA85 /* Float.swift */,
 				C1294464235EC466001EAA85 /* UIColor.swift */,
 				C129446C235EC485001EAA85 /* ColorPickerViewController+UITextField.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		C131FC2A238E04FB001DD7F9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C173B9E9238E1617002828A2 /* RxGesture.framework */,
+				C131FC2E238E04FB001DD7F9 /* Alertift.framework */,
+				C131FC2D238E04FB001DD7F9 /* RxCocoa.framework */,
+				C131FC2F238E04FB001DD7F9 /* RxOptional.framework */,
+				C131FC2B238E04FB001DD7F9 /* RxRelay.framework */,
+				C131FC2C238E04FB001DD7F9 /* RxSwift.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C173B9EC238E1B33002828A2 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				C173B9EF238E1D4D002828A2 /* RGB.swift */,
+				C173B9F1238E1D57002828A2 /* Alert.swift */,
+				C173B9F3238E268A002828A2 /* TextColor.swift */,
+			);
+			path = Entity;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -154,11 +209,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C129445A235EC21F001EAA85 /* Build configuration list for PBXNativeTarget "ColorPicker" */;
 			buildPhases = (
-				5D609E390A3682F42925C1C4 /* [CP] Check Pods Manifest.lock */,
 				C1294442235EC21E001EAA85 /* Sources */,
 				C1294443235EC21E001EAA85 /* Frameworks */,
 				C1294444235EC21E001EAA85 /* Resources */,
-				310192CBE93A495258580E3D /* [CP] Embed Pods Frameworks */,
+				C131FC3A238E04FB001DD7F9 /* Embed Frameworks */,
+				C131FC3B238E0500001DD7F9 /* Run Script - Carthage */,
 			);
 			buildRules = (
 			);
@@ -217,24 +272,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		310192CBE93A495258580E3D /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ColorPicker/Pods-ColorPicker-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ColorPicker/Pods-ColorPicker-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ColorPicker/Pods-ColorPicker-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		5D609E390A3682F42925C1C4 /* [CP] Check Pods Manifest.lock */ = {
+		C131FC3B238E0500001DD7F9 /* Run Script - Carthage */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -242,19 +280,21 @@
 			inputFileListPaths = (
 			);
 			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
+				"$(SRCROOT)/Carthage/Build/iOS/RxSwift.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxCocoa.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxRelay.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxOptional.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Alertift.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxGesture.framework",
 			);
-			name = "[CP] Check Pods Manifest.lock";
+			name = "Run Script - Carthage";
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-ColorPicker-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n/usr/local/bin/carthage copy-frameworks\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -265,14 +305,16 @@
 			files = (
 				C129444E235EC21E001EAA85 /* ColorPickerViewController.swift in Sources */,
 				C1294465235EC466001EAA85 /* UIColor.swift in Sources */,
+				C173B9F4238E268A002828A2 /* TextColor.swift in Sources */,
 				C129444A235EC21E001EAA85 /* AppDelegate.swift in Sources */,
-				C1294467235EC46F001EAA85 /* NotificationName.swift in Sources */,
+				C173B9F7238E48FC002828A2 /* Validator.swift in Sources */,
+				C173B9F0238E1D4D002828A2 /* RGB.swift in Sources */,
+				C173B9F2238E1D57002828A2 /* Alert.swift in Sources */,
 				C129446D235EC485001EAA85 /* ColorPickerViewController+UITextField.swift in Sources */,
-				C1294463235EC45F001EAA85 /* Validator.swift in Sources */,
 				C129444C235EC21E001EAA85 /* SceneDelegate.swift in Sources */,
 				C1294469235EC475001EAA85 /* String.swift in Sources */,
-				C1294461235EC41C001EAA85 /* ColorPickerModel.swift in Sources */,
-				C129446B235EC47A001EAA85 /* Float.swift in Sources */,
+				C1294461235EC41C001EAA85 /* ColorPickerViewModel.swift in Sources */,
+				C173B9EE238E1D15002828A2 /* ColorPickerModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -348,7 +390,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -402,7 +444,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -414,12 +456,15 @@
 		};
 		C129445B235EC21F001EAA85 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7C1AD801D2E9B06211F0F162 /* Pods-ColorPicker.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1.1.1;
 				DEVELOPMENT_TEAM = K3WSFBFNGQ;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = ColorPicker/Resources/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -436,12 +481,15 @@
 		};
 		C129445C235EC21F001EAA85 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A68C130A93C919811D27D23F /* Pods-ColorPicker.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1.1.1;
 				DEVELOPMENT_TEAM = K3WSFBFNGQ;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = ColorPicker/Resources/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
 				LD_RUNPATH_SEARCH_PATHS = (

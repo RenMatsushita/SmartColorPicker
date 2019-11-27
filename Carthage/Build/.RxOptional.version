@@ -1,0 +1,10 @@
+{
+  "commitish" : "4.1.0",
+  "iOS" : [
+    {
+      "name" : "RxOptional",
+      "hash" : "6f43e16d2473c4e82aeeed9c13ee7c9b30e1ef85add98d561716e2c86e22ddac",
+      "swiftToolchainVersion" : "5.1.2 (swiftlang-1100.0.278 clang-1100.0.33.9)"
+    }
+  ]
+}

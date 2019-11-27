@@ -1,0 +1,4 @@
+github "ReactiveX/RxSwift"
+github "RxSwiftCommunity/RxOptional"
+github "RxSwiftCommunity/RxGesture"
+github "sgr-ksmt/Alertift"

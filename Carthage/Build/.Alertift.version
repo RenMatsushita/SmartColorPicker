@@ -1,0 +1,10 @@
+{
+  "commitish" : "4.1.1",
+  "iOS" : [
+    {
+      "name" : "Alertift",
+      "hash" : "c88452c1da9b3533790ba16cee7b991b0fdee845668fc0aa66c950a0debcf739",
+      "swiftToolchainVersion" : "5.1.2 (swiftlang-1100.0.278 clang-1100.0.33.9)"
+    }
+  ]
+}
