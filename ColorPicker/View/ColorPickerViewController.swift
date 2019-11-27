@@ -43,8 +43,7 @@ final class ColorPickerViewController: UIViewController {
     )
     
     private let disposeBag = DisposeBag()
-    private let notification: NotificationCenter = NotificationCenter.default
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         

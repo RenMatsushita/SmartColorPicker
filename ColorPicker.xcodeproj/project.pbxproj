@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		C127A1F2235EF3940033AF04 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C127A1F1235EF3940033AF04 /* Default-568h@2x.png */; };
 		C129444A235EC21E001EAA85 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1294449235EC21E001EAA85 /* AppDelegate.swift */; };
-		C129444C235EC21E001EAA85 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C129444B235EC21E001EAA85 /* SceneDelegate.swift */; };
 		C129444E235EC21E001EAA85 /* ColorPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C129444D235EC21E001EAA85 /* ColorPickerViewController.swift */; };
 		C1294451235EC21E001EAA85 /* ColorPicker.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C129444F235EC21E001EAA85 /* ColorPicker.storyboard */; };
 		C1294453235EC21F001EAA85 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C1294452235EC21F001EAA85 /* Assets.xcassets */; };
@@ -60,7 +59,6 @@
 		C127A1F1235EF3940033AF04 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		C1294446235EC21E001EAA85 /* ColorPicker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ColorPicker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1294449235EC21E001EAA85 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C129444B235EC21E001EAA85 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		C129444D235EC21E001EAA85 /* ColorPickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPickerViewController.swift; sourceTree = "<group>"; };
 		C1294450235EC21E001EAA85 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/ColorPicker.storyboard; sourceTree = "<group>"; };
 		C1294452235EC21F001EAA85 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -152,7 +150,6 @@
 			isa = PBXGroup;
 			children = (
 				C1294449235EC21E001EAA85 /* AppDelegate.swift */,
-				C129444B235EC21E001EAA85 /* SceneDelegate.swift */,
 				C173B9F6238E48FC002828A2 /* Validator.swift */,
 			);
 			path = App;
@@ -311,7 +308,6 @@
 				C173B9F0238E1D4D002828A2 /* RGB.swift in Sources */,
 				C173B9F2238E1D57002828A2 /* Alert.swift in Sources */,
 				C129446D235EC485001EAA85 /* ColorPickerViewController+UITextField.swift in Sources */,
-				C129444C235EC21E001EAA85 /* SceneDelegate.swift in Sources */,
 				C1294469235EC475001EAA85 /* String.swift in Sources */,
 				C1294461235EC41C001EAA85 /* ColorPickerViewModel.swift in Sources */,
 				C173B9EE238E1D15002828A2 /* ColorPickerModel.swift in Sources */,
