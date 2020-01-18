@@ -1,0 +1,17 @@
+name: LicensePlist, nameSpecified: 
+body: MIT License
+
+Copyrig…
+version: 2.11.4
+
+name: Alertift, nameSpecified: , owner: sgr-ksmt, version: 4.1.1
+
+name: RxGesture, nameSpecified: , owner: RxSwiftCommunity, version: 3.0.1
+
+name: RxOptional, nameSpecified: , owner: RxSwiftCommunity, version: 4.1.0
+
+name: RxSwift, nameSpecified: , owner: ReactiveX, version: 5.0.1
+
+add-version-numbers: false
+
+LicensePlist Version: 2.11.4

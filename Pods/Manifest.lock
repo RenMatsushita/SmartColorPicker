@@ -1,0 +1,16 @@
+PODS:
+  - LicensePlist (2.11.4)
+
+DEPENDENCIES:
+  - LicensePlist
+
+SPEC REPOS:
+  trunk:
+    - LicensePlist
+
+SPEC CHECKSUMS:
+  LicensePlist: c33fc7fd031062df4db91e96c78ed39d482f1948
+
+PODFILE CHECKSUM: dc00d3044d76cf04bf60347182eb65157f31c6eb
+
+COCOAPODS: 1.8.4
