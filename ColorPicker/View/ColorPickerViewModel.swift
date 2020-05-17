@@ -34,9 +34,9 @@ final class ColorPickerViewModel {
         textColorRelay.asObservable()
     }
     
-    private let alertRelay = PublishSubject<Alert>()
+    private let alertSubject = PublishSubject<Alert>()
     var alert: Observable<Alert> {
-        return alertRelay.asObservable()
+        return alertSubject.asObservable()
     }
     
     private let disposeBag: DisposeBag = DisposeBag()
@@ -70,7 +70,7 @@ final class ColorPickerViewModel {
         input.mainColorLabelLongPressed
             .subscribe { _ in
                 UIPasteboard.general.string = self.mainColorRelay.value.toHex()
-                self.alertRelay.onNext(Alert(title: "完了", message: "背景色をコピーしました"))
+                self.alertSubject.onNext(Alert(title: "完了", message: "背景色をコピーしました"))
             }
             .disposed(by: disposeBag)
         
@@ -83,7 +83,7 @@ final class ColorPickerViewModel {
         input.reverseColorLabelLongPressed
             .subscribe { _ in
                 UIPasteboard.general.string = self.mainColorRelay.value.reverse().toHex()
-                self.alertRelay.onNext(Alert(title: "完了", message: "反転色をコピーしました"))
+                self.alertSubject.onNext(Alert(title: "完了", message: "反転色をコピーしました"))
             }
             .disposed(by: disposeBag)
         
@@ -96,7 +96,7 @@ final class ColorPickerViewModel {
         input.complementaryColorLabelLongPressed
             .subscribe { _ in
                 UIPasteboard.general.string = self.mainColorRelay.value.complementaryColor().toHex()
-                self.alertRelay.onNext(Alert(title: "完了", message: "補色をコピーしました"))
+                self.alertSubject.onNext(Alert(title: "完了", message: "補色をコピーしました"))
             }
             .disposed(by: disposeBag)
     }
