@@ -68,7 +68,7 @@ final class ColorPickerViewController: UIViewController {
         complementaryColorLabelConfigure()
         textFieldConfigure()
     }
-    /// mainColorLabelの初期設定
+
     private func mainColorLabelConfigure() {
         if view.frame.height == 568 {
             mainColorLabel.font = .systemFont(ofSize: 62, weight: .bold)
@@ -81,19 +81,16 @@ final class ColorPickerViewController: UIViewController {
         }
     }
     
-    /// reverseColorLabelの初期設定
     private func reverseColorLabelConfigure() {
         reverseColorLabel.layer.cornerRadius = 20
         reverseColorLabel.clipsToBounds = true
     }
     
-    /// complementaryColorLabelの初期設定
     private func complementaryColorLabelConfigure() {
         complementaryColorLabel.layer.cornerRadius = 20
         complementaryColorLabel.clipsToBounds = true
     }
     
-    /// textFieldの初期設定
     private func textFieldConfigure() {
         textfield.delegate = self
         textfield.keyboardType = .alphabet
@@ -141,7 +138,7 @@ extension ColorPickerViewController {
             Alertift
                 .alert(title: alert.title, message: alert.message)
                 .action(.default("OK"))
-                .show()
+                .show(on: me)
         }
     }
 }
